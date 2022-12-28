@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(57deg, #98c1d9, #e0fbfc);   
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0fbfc;
+}
+.title {
+    color: #3d5a80;
+    font-weight: 600;
+    font-size: 26px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin: 10px 20px;
+    padding: 10px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.container .header {
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    color: #ee6c4d;
+}
+.container .input-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 20px 40px;
+}
+.container .input-box .input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #98c1d9;
+    background: transparent;
+    font-size: 16px;
+    color: #3d5a80;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.container .input-box .input::placeholder {
+    color: #3d5a80;
+}
+.text-area {
+    resize: none;
+    width: 200px;
+}
+.container .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.container .btn {
+    width: 45%;
+    border-radius: 6px;
+    background: transparent;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    transition: 0.3s all ease-in-out;
+}
+.container .buttons .back-fill {
+    border: 1px solid #3d5a80;
+    color: #3d5a80;
+}
+.container .buttons .back-fill:hover {
+    background: #3d5a80;
+    color: #fff;
+}
+.container .buttons .back-no {
+    color: #fff;
+    background: #3d5a80;
+    border: 1px solid #3d5a80;
+}

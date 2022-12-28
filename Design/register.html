@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(57deg, #98c1d9, #e0fbfc);
+        overflow: hidden;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #e0fbfc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 2.6rem;
+        color: #3d5a80;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+        padding: 20px 40px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .form .heading {
+        color: #ee6c4d;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .form .input-boxes {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form .label {
+        bottom: 4px;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #3d5a80;
+        margin: 0 10px;
+    }
+
+    .form .input-box {
+        position: relative;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #98c1d9;
+        background: transparent;
+    }
+
+    .form input::placeholder {
+        color: #3d5a80;
+    }
+
+    .form .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .form .submit {
+        width: 50%;
+        height: 30px;
+        background: transparent;
+        border-radius: 10px;
+        border: 2px solid #3d5a80;
+        transition: 0.3s;
+    }
+
+    .form .submit:nth-child(1) {
+        background: #3d5a80;
+        border: 5px;
+        color: #fff;
+    }
+
+    .form .submit:hover {
+        border: none;
+        background: #3d5a80;
+        color: #e0fbfc;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .form .links {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+    .header .submit:hover {
+        border: none;
+        background: #3d5a80;
+        color: #e0fbfc;
+    }
+
+    .header .submit:nth-child(1) {
+        background: #3d5a80;
+        border: 5px;
+        color: #fff;
+    }
+
+    .header .submit {
+        width: 10%;
+        height: 30px;
+        background: transparent;
+        border-radius: 10px;
+        border: 2px solid #3d5a80;
+        transition: 0.3s;
+        
+    }
+</style>
+
+<body>
+    <nav>
+        <span class="header">
+            Voice Based Mails System
+            <button class="submit"> <a href="Loader.html" class="submit"> Login Page </a></button>
+
+        </span>
+    </nav>
+    <form action="#" class="form">
+        <span class="heading">
+            Register Here
+        </span>
+        <div class="input-boxes">
+            <label for="" class="label">First Name</label>
+            <input type="text" class="input-box" required>
+        </div>
+        <div class="input-boxes">
+            <label for="" class="label">Last Name</label>
+            <input type="text" class="input-box" required>
+        </div>
+        <div class="input-boxes">
+            <label for="" class="label">Email</label>
+            <input type="text" class="input-box" required>
+        </div>
+        <div class="input-boxes">
+            <label for="" class="label">Password</label>
+            <input type="password" class="input-box">
+        </div>
+        <div class="input-boxes">
+            <label for="" class="label">Confirm Password</label>
+            <input type="password" class="input-box">
+        </div>
+        <div class="btns">
+            <button class="submit">Register</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
